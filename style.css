@@ -34,7 +34,9 @@ nav ul a {
 }
 nav li {
   padding: 5px 10px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
 }
 nav li:hover {
   box-sizing: content-box;
@@ -43,14 +45,14 @@ nav li:hover {
 
 @keyframes anim-border {
   20% {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
   100% {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
   }
 }
 img {

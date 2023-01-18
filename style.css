@@ -13,6 +13,8 @@ body {
 }
 header {
   background-color: #a3d7bc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 header img {
   display: block;
@@ -31,6 +33,7 @@ nav ul {
 nav ul a {
   text-decoration: none;
   color: black;
+  transition: color 0.3s ease-in-out;
 }
 nav li {
   padding: 5px 10px;
@@ -43,17 +46,59 @@ nav li:hover {
   animation: anim-border 0.6s ease-in-out forwards alternate;
 }
 
+nav li:hover a {
+  color: #495e57;
+}
 @keyframes anim-border {
   20% {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(44, 43, 43, 0.872);
+    border-bottom: 1px solid rgba(44, 43, 43, 0.872);
   }
   100% {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-top: 1px solid rgba(44, 43, 43, 0.872);
+    border-bottom: 1px solid rgba(44, 43, 43, 0.872);
+    border-left: 1px solid rgba(44, 43, 43, 0.872);
+    border-right: 1px solid rgba(44, 43, 43, 0.872);
   }
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+section:nth-child(1) {
+  background-image: url(./img/w0565_1s_Cheerful-lemon-fruit-and-white-blossom-wallpaper-Lemon-Tart_Repeating-Pattern-Sample-1.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 1rem;
+  height: 70vh;
+  position: relative;
+}
+section:nth-child(1)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  position: absolute;
+}
+section:nth-child(1) h1 {
+  margin-top: 13%;
+  font-size: 3rem;
+  color: #384642;
+  position: relative;
+  font-weight: 800;
+  z-index: 1;
+}
+section:nth-child(1) p {
+  font-style: italic;
+  width: 600px;
+  text-align: center;
+  color: rgb(11, 45, 30);
+  z-index: 1;
+  font-weight: 600;
 }
 img {
   width: 30px;

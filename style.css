@@ -128,10 +128,10 @@ section:nth-child(2) article:hover {
   scale: 1.1;
 }
 section:nth-child(2) article:first-of-type:hover {
-  transform: skew(3deg, 0deg);
+  transform: skew(2deg, 0deg) translateX(8%);
 }
 section:nth-child(2) article:last-of-type:hover {
-  transform: skew(-3deg, 0deg);
+  transform: skew(-2deg, 0deg) translateX(-8%);
 }
 section:nth-child(2) article img {
   display: block;
@@ -140,6 +140,9 @@ section:nth-child(2) article img {
 }
 section:nth-child(2) article h2 {
   margin-top: 17px;
+  width: fit-content;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f4ce14;
 }
 section:nth-child(2) article p {
   margin-top: 10px;
@@ -220,5 +223,11 @@ footer img {
     bottom: -10%;
     left: 25%;
     rotate: 40deg;
+  }
+  section:nth-child(2) article:first-of-type:hover {
+    transform: skew(2deg, 0deg) translateX(3%);
+  }
+  section:nth-child(2) article:last-of-type:hover {
+    transform: skew(-2deg, 0deg) translateX(-3%);
   }
 }
